@@ -2,15 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>test</groupId>
-    <artifactId>mrp-test</artifactId>
+    <artifactId>mrp-test-downstream</artifactId>
     <version>${revision}${changelist}</version>
-    <packaging>pom</packaging>
     <properties>
-        <revision>2.37</revision>
+        <revision>1.0</revision>
         <changelist>-SNAPSHOT</changelist>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <incrementals.url>http://localhost:8081/repository/incrementals/</incrementals.url>
     </properties>
+    <repositories>
+        <repository>
+            <id>mock-public</id>
+            <url>http://localhost:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
     <distributionManagement>
         <repository>
             <id>mock-releases</id>
@@ -27,10 +32,20 @@
         <url>https://github.com/jglick/${project.artifactId}</url>
         <tag>HEAD</tag>
     </scm>
-    <modules>
-        <module>one</module>
-        <module>two</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>two</artifactId>
+            <version>2.36</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
     <profiles>
         <profile>
             <id>consume-incrementals</id>
