@@ -5,7 +5,7 @@ import test.Two;
 
 public class TwoTest {
     @Test public void t() {
-        System.err.println("t");
-        new Two();
+        System.err.println("TwoTest.t");
+        Two.m1();
     }
 }
