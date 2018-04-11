@@ -67,21 +67,6 @@
                     </snapshots>
                 </pluginRepository>
             </pluginRepositories>
-        </profile>
-        <profile>
-            <id>produce-incrementals</id>
-            <activation>
-                <property>
-                    <name>set.changelist</name>
-                    <value>true</value>
-                </property>
-            </activation>
-            <distributionManagement>
-                <repository>
-                    <id>incrementals</id>
-                    <url>${incrementals.url}</url>
-                </repository>
-            </distributionManagement>
             <build>
                 <plugins>
                     <plugin>
@@ -111,6 +96,25 @@
                             </execution>
                         </executions>
                     </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>produce-incrementals</id>
+            <activation>
+                <property>
+                    <name>set.changelist</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <distributionManagement>
+                <repository>
+                    <id>incrementals</id>
+                    <url>${incrementals.url}</url>
+                </repository>
+            </distributionManagement>
+            <build>
+                <plugins>
                     <plugin>
                         <artifactId>maven-source-plugin</artifactId>
                         <version>3.0.1</version>
