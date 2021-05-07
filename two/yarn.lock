@@ -36,10 +36,6 @@ align-text@^0.1.1, align-text@^0.1.3:
     longest "^1.0.1"
     repeat-string "^1.5.2"
 
-amdefine@>=0.0.4:
-  version "1.0.1"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/amdefine/-/amdefine-1.0.1.tgz?dl=https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-
 ansi-cyan@^0.1.1:
   version "0.1.1"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/ansi-cyan/-/ansi-cyan-0.1.1.tgz?dl=https://registry.yarnpkg.com/ansi-cyan/-/ansi-cyan-0.1.1.tgz#538ae528af8982f28ae30d86f2f17456d2609873"
@@ -140,10 +136,6 @@ assert-plus@^0.2.0:
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/assign-symbols/-/assign-symbols-1.0.0.tgz?dl=https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
-
-async@~0.2.6:
-  version "0.2.10"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/async/-/async-0.2.10.tgz?dl=https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -736,14 +728,16 @@ gulplog@^1.0.0:
   dependencies:
     glogg "^1.0.0"
 
-handlebars@^3.0.3:
-  version "3.0.3"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/handlebars/-/handlebars-3.0.3.tgz?dl=https://registry.yarnpkg.com/handlebars/-/handlebars-3.0.3.tgz#0e09651a2f0fb3c949160583710d551f92e6d2ad"
+handlebars@^4.7.7:
+  version "4.7.7"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   dependencies:
-    optimist "^0.6.1"
-    source-map "^0.1.40"
+    minimist "^1.2.5"
+    neo-async "^2.6.0"
+    source-map "^0.6.1"
+    wordwrap "^1.0.0"
   optionalDependencies:
-    uglify-js "~2.3"
+    uglify-js "^3.1.4"
 
 har-schema@^1.0.5:
   version "1.0.5"
@@ -1294,13 +1288,9 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/minimist/-/minimist-0.0.8.tgz?dl=https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.0:
-  version "1.2.0"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/minimist/-/minimist-1.2.0.tgz?dl=https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/minimist/-/minimist-0.0.10.tgz?dl=https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+minimist@^1.1.0, minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
 
 mixin-deep@^1.2.0:
   version "1.3.1"
@@ -1345,6 +1335,10 @@ nanomatch@^1.2.9:
 natives@^1.1.0:
   version "1.1.3"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/natives/-/natives-1.1.3.tgz?dl=https://registry.yarnpkg.com/natives/-/natives-1.1.3.tgz#44a579be64507ea2d6ed1ca04a9415915cf75558"
+
+neo-async@^2.6.0:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
 
 oauth-sign@~0.8.1:
   version "0.8.2"
@@ -1405,19 +1399,6 @@ once@~1.3.0:
   resolved "https://repo.jenkins-ci.org/api/npm/npm/once/-/once-1.3.3.tgz?dl=https://registry.yarnpkg.com/once/-/once-1.3.3.tgz#b2e261557ce4c314ec8304f3fa82663e4297ca20"
   dependencies:
     wrappy "1"
-
-optimist@^0.6.1:
-  version "0.6.1"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/optimist/-/optimist-0.6.1.tgz?dl=https://registry.yarnpkg.com/optimist/-/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
-  dependencies:
-    minimist "~0.0.1"
-    wordwrap "~0.0.2"
-
-optimist@~0.3.5:
-  version "0.3.7"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/optimist/-/optimist-0.3.7.tgz?dl=https://registry.yarnpkg.com/optimist/-/optimist-0.3.7.tgz#c90941ad59e4273328923074d2cf2e7cbc6ec0d9"
-  dependencies:
-    wordwrap "~0.0.2"
 
 orchestrator@^0.3.0:
   version "0.3.8"
@@ -1717,15 +1698,13 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/source-map-url/-/source-map-url-0.4.0.tgz?dl=https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
 
-source-map@^0.1.40, source-map@~0.1.7:
-  version "0.1.43"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/source-map/-/source-map-0.1.43.tgz?dl=https://registry.yarnpkg.com/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
-  dependencies:
-    amdefine ">=0.0.4"
-
 source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1:
   version "0.5.7"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/source-map/-/source-map-0.5.7.tgz?dl=https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+
+source-map@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 sparkles@^1.0.0:
   version "1.0.1"
@@ -1868,13 +1847,9 @@ uglify-js@^2.8.22:
   optionalDependencies:
     uglify-to-browserify "~1.0.0"
 
-uglify-js@~2.3:
-  version "2.3.6"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/uglify-js/-/uglify-js-2.3.6.tgz?dl=https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.3.6.tgz#fa0984770b428b7a9b2a8058f46355d14fef211a"
-  dependencies:
-    async "~0.2.6"
-    optimist "~0.3.5"
-    source-map "~0.1.7"
+uglify-js@^3.1.4:
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.5.tgz#5d71d6dbba64cf441f32929b1efce7365bb4f113"
 
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
@@ -2000,9 +1975,9 @@ wordwrap@0.0.2:
   version "0.0.2"
   resolved "https://repo.jenkins-ci.org/api/npm/npm/wordwrap/-/wordwrap-0.0.2.tgz?dl=https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
 
-wordwrap@~0.0.2:
-  version "0.0.3"
-  resolved "https://repo.jenkins-ci.org/api/npm/npm/wordwrap/-/wordwrap-0.0.3.tgz?dl=https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+wordwrap@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
 wrappy@1:
   version "1.0.2"
